@@ -1,6 +1,6 @@
 # Phonegap Hardware Plugins
 
-This is a demonstration tutorial of some hardware plugins from Cordova.
+This is a demonstration tutorial of camera & vibration hardware plugins from Cordova.
 
 ## Prerequisites
 
@@ -36,11 +36,11 @@ cordova plugin add cordova-plugin-vibration
 
 ## Phonegap Camera Tutorial
 
-Explaining the Phonegap Camera
+Explaining the Phonegap Camera plugin
 
 ### Camera Function
 
-When can specify some options like the listed below
+We can specify some options like the listed below
 
 ```Javascript
 takePhoto: function(){
@@ -59,6 +59,14 @@ takePhoto: function(){
     navigator.camera.getPicture(app.successCallback, app.errorCallback, opts);
 }
 ```
+
+Option variables:
+
+* **destinationType:** Chose the format of the return value.
+* **sourceType:** Set the source of the picture.
+* **mediaType:** Set the type of media to select from.
+* **encodingType:** Choose the returned image file's encoding.
+* **cameraDirection:** Choose the camera to use (front or back).
 
 We must define successCallback and errorCallback methods for the `getPicture()` Function
 
