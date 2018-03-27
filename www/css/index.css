@@ -1,0 +1,10 @@
+#pictureButton{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 1rem;
+}
+#message{
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin: 1rem;
+}
