@@ -60,6 +60,21 @@ takePhoto: function(){
 }
 ```
 
+We must define successCallback and errorCallback methods for the `getPicture()` Function
+
+```Javascript
+successCallback: function(imgURI){
+    document.getElementById('message').textContent = imgURI;
+    document.getElementById('photo').src = imgURI;
+}
+```
+
+```Javascript
+errorCallback: function(msg){
+    document.getElementById('message').textContent = msg;
+}
+```
+
 ### Phonegap camera.getPicture() method
 
 Takes a photo using the camera. It opens the device default's camera application
