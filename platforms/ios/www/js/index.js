@@ -16,6 +16,7 @@ var app = {
             targetHeight: 400
         };
 
+        navigator.vibrate(3000)
         navigator.camera.getPicture(app.successCallback, app.errorCallback, opts);
     },
 
